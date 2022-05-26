@@ -8,4 +8,9 @@ const headers = {
 
 function getCountry(country) {
     return fetch(`$(path}/${country}`, headers)
+    .then((response) => response.json())
+}
+
+export default {
+    getCountry
 }
